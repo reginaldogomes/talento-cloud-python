@@ -9,15 +9,14 @@ Bem-vindo ao repositório de Introdução à Programação com Python! Este repo
    git clone https://github.com/reginaldogomes/talento-cloud-python
 
 2. Navegue até o diretório do projeto:
-  ```bash
-  cd talento-cloud-python
+   ```bash
+   cd talento-cloud-python
 
 3. (Opcional) Crie um ambiente virtual
-  ```bash
+   ```bash
     python -m venv venv
     source venv/bin/activate # No Windows use `venv\Scripts\activate`
 
 4. Compilar o codigo do arquivo Python:
-  ```bash
-    python3 desafio1.py
-
+   ```bash
+   python3 desafio1.py
