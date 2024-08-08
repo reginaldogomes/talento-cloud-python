@@ -29,22 +29,19 @@ def operacao_invalida() -> int:
     print("Erro: Operação inválida.")
     return 0
 
-def main():
-    num1 = int(input("Digite o primeiro número: "))
-    num2 = int(input("Digite o segundo número: "))
-    operacao = int(input("Digite a operação (1: Soma, 2: Subtração, 3: Multiplicação, 4: Divisão): "))
-    
-    resultado = calcular(num1, num2, operacao)
 
-    if resultado is not None:
-      operacao_str = {
-          1: "Soma",
-          2: "Subtração",
-          3: "Multiplicação",
-          4: "Divisão"
-      }.get(operacao, "Operação Inválida")
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+operacao = int(input("Digite a operação (1: Soma, 2: Subtração, 3: Multiplicação, 4: Divisão): "))
 
-    print(f"Resultado da {operacao_str}: {resultado}")
+resultado = calcular(num1, num2, operacao)
 
-if __name__ == "__main__":
-    main()
+if resultado is not None:
+  operacao_str = {
+      1: "Soma",
+      2: "Subtração",
+      3: "Multiplicação",
+      4: "Divisão"
+  }.get(operacao, "Operação Inválida")
+
+print(f"Resultado da {operacao_str}: {resultado}")
