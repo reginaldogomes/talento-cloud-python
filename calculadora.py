@@ -36,16 +36,13 @@ def main():
     
     resultado = calcular(num1, num2, operacao)
 
-    if operacao == 1:
-      operacao_str = "Soma"
-    elif operacao == 2:
-      operacao_str = "Subtração"
-    elif operacao == 3:
-      operacao_str = "Multiplicação"
-    elif operacao == 4:
-      operacao_str = "Divisão"
-    else:
-      operacao_str = "Operação Inválida"
+    if resultado is not None:
+      operacao_str = {
+          1: "Soma",
+          2: "Subtração",
+          3: "Multiplicação",
+          4: "Divisão"
+      }.get(operacao, "Operação Inválida")
 
     print(f"Resultado da {operacao_str}: {resultado}")
 
